@@ -33,7 +33,7 @@ export const Route = createFileRoute("/pillar/$slug")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-2xl px-6 py-32 text-center">
       <h1 className="text-3xl font-bold">Loan program not found</h1>
-      <Button asChild className="mt-6"><Link to="/columbus">Back to hub</Link></Button>
+      <Button asChild className="mt-6"><Link to="/new-orleans">Back to hub</Link></Button>
     </div>
   ),
   errorComponent: ({ reset }) => (
@@ -58,7 +58,7 @@ function PillarPage() {
         {/* Breadcrumb */}
         <div className="border-b border-border/60 bg-[color:var(--brand-cream)]">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em]">
-            <Link to="/columbus" className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-[color:var(--brand-bronze)]">
+            <Link to="/new-orleans" className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-[color:var(--brand-bronze)]">
               <ArrowLeft className="h-3.5 w-3.5" /> New Orleans Hub
             </Link>
             <span className="text-muted-foreground">
@@ -147,7 +147,7 @@ function PillarPage() {
               {SUBURBS.map((s, i) => (
                 <li key={s.slug}>
                   <Link
-                    to="/columbus/$suburb/$pillar"
+                    to="/new-orleans/$suburb/$pillar"
                     params={{ suburb: s.slug, pillar: pillar.slug }}
                     className="group relative flex min-w-0 items-center justify-between gap-3 overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[color:var(--brand-charcoal)]/30 hover:bg-[color:var(--brand-charcoal)] hover:text-white hover:shadow-md"
                   >
