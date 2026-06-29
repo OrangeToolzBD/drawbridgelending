@@ -633,12 +633,12 @@ export function Header() {
 function Hero() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden bg-[color:var(--brand-charcoal)] text-white flex items-center">
-      {/* New Orleans skyline photo */}
+      {/* Riverside bridge at dusk — thematic fit for Drawbridge Lending */}
       <img
-        src="/columbsskyln.png"
+        src="https://images.unsplash.com/photo-1569959220744-ff553533f492?w=1800&q=80&fit=crop&auto=format"
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover object-bottom"
         fetchPriority="high"
       />
       {/* Dark overlay — deep navy + slight warm tint for brand feel */}
@@ -719,6 +719,11 @@ function WhyUs() {
   ];
   return (
     <section className="relative py-20 sm:py-28 bg-[color:var(--brand-cream)] overflow-hidden">
+      {/* Decorative shapes */}
+      <svg aria-hidden className="pointer-events-none absolute left-6 top-10 opacity-[0.07]" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-10 top-16 opacity-[0.06]" width="24" height="24" viewBox="0 0 24 24" fill="none"><line x1="12" y1="0" x2="12" y2="24" stroke="#d3b77e" strokeWidth="1.5"/><line x1="0" y1="12" x2="24" y2="12" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-[42%] bottom-10 opacity-[0.05]" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="4" stroke="#d3b77e" strokeWidth="1.5" transform="rotate(18 16 16)"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-[8%] bottom-16 opacity-[0.06]" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="3" fill="#d3b77e"/></svg>
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-[color:var(--primary)]/8 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--primary)]">
@@ -801,6 +806,10 @@ function CapitalDesk() {
   ];
   return (
     <section id="capital" className="relative py-20 sm:py-28 overflow-hidden">
+      {/* Decorative shapes */}
+      <svg aria-hidden className="pointer-events-none absolute right-4 top-12 opacity-[0.05]" width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="27" stroke="#d3b77e" strokeWidth="1.5"/><circle cx="28" cy="28" r="18" stroke="#d3b77e" strokeWidth="1"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-8 bottom-12 opacity-[0.05]" width="22" height="22" viewBox="0 0 22 22" fill="none"><line x1="11" y1="0" x2="11" y2="22" stroke="#d3b77e" strokeWidth="1.5"/><line x1="0" y1="11" x2="22" y2="11" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-[55%] top-8 opacity-[0.04]" width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="2" stroke="#d3b77e" strokeWidth="1.5" transform="rotate(45 7 7)"/></svg>
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -969,6 +978,11 @@ function HowItWorks() {
 
   return (
     <section id="how" className="relative overflow-hidden bg-[color:var(--brand-cream)] py-20 sm:py-28">
+      {/* Decorative shapes */}
+      <svg aria-hidden className="pointer-events-none absolute right-[3%] top-10 opacity-[0.06]" width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 2 L38 20 L20 38 L2 20 Z" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-[6%] bottom-14 opacity-[0.05]" width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="25" stroke="#d3b77e" strokeWidth="1.2"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-[48%] bottom-8 opacity-[0.06]" width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="8" y1="0" x2="8" y2="16" stroke="#d3b77e" strokeWidth="1.5"/><line x1="0" y1="8" x2="16" y2="8" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-[18%] bottom-10 opacity-[0.05]" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#d3b77e"/></svg>
       <div className="relative mx-auto max-w-7xl px-6">
 
         {/* Header */}
@@ -1052,6 +1066,11 @@ function Industries() {
 
   return (
     <section id="industries" className="relative overflow-hidden bg-[color:var(--brand-cream)] py-20 sm:py-28">
+      {/* Decorative shapes */}
+      <svg aria-hidden className="pointer-events-none absolute left-4 top-14 opacity-[0.06]" width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="1" y="1" width="34" height="34" rx="6" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-6 top-8 opacity-[0.05]" width="20" height="20" viewBox="0 0 20 20" fill="none"><line x1="10" y1="0" x2="10" y2="20" stroke="#d3b77e" strokeWidth="1.5"/><line x1="0" y1="10" x2="20" y2="10" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-[12%] bottom-12 opacity-[0.06]" width="44" height="44" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="21" stroke="#d3b77e" strokeWidth="1.2"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-[30%] bottom-6 opacity-[0.05]" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="#d3b77e"/></svg>
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Header */}
@@ -1498,6 +1517,11 @@ function FinalCTA() {
       {/* Decorative rings */}
       <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
       <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/8" />
+      {/* Small accent shapes */}
+      <svg aria-hidden className="pointer-events-none absolute left-10 top-12 opacity-[0.15]" width="22" height="22" viewBox="0 0 22 22" fill="none"><line x1="11" y1="0" x2="11" y2="22" stroke="#d3b77e" strokeWidth="1.5"/><line x1="0" y1="11" x2="22" y2="11" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-12 bottom-14 opacity-[0.12]" width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="18" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute left-[20%] bottom-10 opacity-[0.10]" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1 L13 7 L7 13 L1 7 Z" stroke="#d3b77e" strokeWidth="1.5"/></svg>
+      <svg aria-hidden className="pointer-events-none absolute right-[22%] top-10 opacity-[0.10]" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#d3b77e"/></svg>
 
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-[color:var(--brand-bronze)]/30 bg-[color:var(--brand-bronze)]/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-[color:var(--brand-bronze)]">
