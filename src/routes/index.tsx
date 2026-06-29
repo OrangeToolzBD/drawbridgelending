@@ -758,60 +758,78 @@ function WhyUs() {
   );
 }
 
-/* ---------------- Capital Desk — 2-col image-topped cards ---------------- */
+/* ---------------- Capital Desk — tabbed program browser ---------------- */
 function CapitalDesk() {
   const programs = [
     {
       slug: "accounts-receivable-financing",
       title: "Accounts Receivable Financing",
+      short: "A/R Financing",
       desc: "Revolving line secured by your open invoices without selling them. Advance up to 90% of eligible A/R.",
       category: "Working Capital",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=320&fit=crop&q=75",
+      stat: "Up to 90% advance",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=600&fit=crop&q=80",
     },
     {
       slug: "invoice-factoring",
       title: "Invoice Factoring",
+      short: "Invoice Factoring",
       desc: "Same-day cash on freight, staffing or oilfield invoices. Funded in as little as 24 hours.",
       category: "Cash Flow",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=320&fit=crop&q=75",
+      stat: "Funded in 24 hrs",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=600&fit=crop&q=80",
     },
     {
       slug: "revenue-based-financing",
       title: "Revenue Based Financing",
+      short: "Revenue Finance",
       desc: "Repay as a fixed percentage of monthly revenue. No equity, no fixed payment schedule.",
       category: "Growth Capital",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=320&fit=crop&q=75",
+      stat: "No equity dilution",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&h=600&fit=crop&q=80",
     },
     {
       slug: "small-business-loans",
       title: "Small Business Loans",
+      short: "Business Loans",
       desc: "One soft-pull application covers every major loan product. 75+ Louisiana-active lenders compared side by side.",
       category: "Business Loans",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=320&fit=crop&q=75",
+      stat: "75+ lenders",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&h=600&fit=crop&q=80",
     },
     {
       slug: "sba-loans",
       title: "SBA Loans",
+      short: "SBA 7(a) / 504",
       desc: "SBA 7(a), 504 and Express programs through Louisiana-active Preferred Lenders. Rates from 8.25% APR.",
       category: "Government-Backed",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=320&fit=crop&q=75",
+      stat: "From 8.25% APR",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&h=600&fit=crop&q=80",
     },
     {
       slug: "equipment-financing",
       title: "Equipment Financing",
+      short: "Equipment Finance",
       desc: "Machinery, vehicles and tools financed with terms up to 7 years. Preserve cash flow on capital purchases.",
       category: "Asset Finance",
-      image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=320&fit=crop&q=75",
+      stat: "Terms up to 7 yrs",
+      image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=900&h=600&fit=crop&q=80",
     },
   ];
+
+  const [active, setActive] = useState(0);
+  const p = programs[active];
+
   return (
     <section id="capital" className="relative py-20 sm:py-28 overflow-hidden">
       {/* Decorative shapes */}
       <svg aria-hidden className="pointer-events-none absolute right-4 top-12 opacity-[0.05]" width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="27" stroke="#d3b77e" strokeWidth="1.5"/><circle cx="28" cy="28" r="18" stroke="#d3b77e" strokeWidth="1"/></svg>
       <svg aria-hidden className="pointer-events-none absolute left-8 bottom-12 opacity-[0.05]" width="22" height="22" viewBox="0 0 22 22" fill="none"><line x1="11" y1="0" x2="11" y2="22" stroke="#d3b77e" strokeWidth="1.5"/><line x1="0" y1="11" x2="22" y2="11" stroke="#d3b77e" strokeWidth="1.5"/></svg>
       <svg aria-hidden className="pointer-events-none absolute left-[55%] top-8 opacity-[0.04]" width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="2" stroke="#d3b77e" strokeWidth="1.5" transform="rotate(45 7 7)"/></svg>
+
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        {/* Header */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-10">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-[color:var(--primary)]/8 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--primary)]">
               Funding Programs
@@ -825,38 +843,74 @@ function CapitalDesk() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {programs.map((p) => (
-            <Link
-              key={p.slug}
-              to="/pillar/$slug"
-              params={{ slug: p.slug }}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[color:var(--primary)]/30"
-            >
-              {/* Image with gradient fade */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={p.image}
-                  alt=""
-                  aria-hidden
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/60" />
-                <span className="absolute bottom-3 left-4 rounded-full bg-[color:var(--primary)] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-white">
-                  {p.category}
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-base font-bold text-foreground transition-colors group-hover:text-[color:var(--primary)]">
-                  {p.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
-                <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-[color:var(--primary)]">
-                  Learn more <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
+        {/* Main panel */}
+        <div className="grid gap-0 overflow-hidden rounded-3xl border border-border shadow-xl lg:grid-cols-[340px_1fr]">
+
+          {/* Left — program list */}
+          <div className="divide-y divide-border bg-[color:var(--brand-charcoal)]">
+            {programs.map((prog, i) => (
+              <button
+                key={prog.slug}
+                onClick={() => setActive(i)}
+                className={`group w-full cursor-pointer px-6 py-5 text-left transition-all duration-200 ${
+                  i === active
+                    ? "bg-[#d3b77e]/10 border-l-2 border-[#d3b77e]"
+                    : "border-l-2 border-transparent hover:bg-white/5"
+                }`}
+              >
+                <div className={`text-[10px] font-bold uppercase tracking-[0.18em] mb-1 transition-colors ${i === active ? "text-[#d3b77e]" : "text-white/35 group-hover:text-white/55"}`}>
+                  {prog.category}
                 </div>
+                <div className={`text-sm font-semibold leading-snug transition-colors ${i === active ? "text-white" : "text-white/60 group-hover:text-white/85"}`}>
+                  {prog.short}
+                </div>
+                {i === active && (
+                  <div className="mt-1 text-[11px] font-semibold text-[#d3b77e]/70">{prog.stat}</div>
+                )}
+              </button>
+            ))}
+          </div>
+
+          {/* Right — detail panel */}
+          <div className="relative flex flex-col bg-card">
+            {/* Image */}
+            <div className="relative h-64 overflow-hidden lg:h-72">
+              <img
+                key={p.slug}
+                src={p.image}
+                alt=""
+                aria-hidden
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+              <span className="absolute bottom-4 left-6 rounded-full bg-[#d3b77e] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[color:var(--brand-charcoal)]">
+                {p.category}
+              </span>
+              <span className="absolute bottom-4 right-6 rounded-full bg-black/40 px-3 py-1 text-[10px] font-bold tracking-wide text-white/80 backdrop-blur-sm">
+                {p.stat}
+              </span>
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-1 flex-col justify-between p-8">
+              <div>
+                <h3 className="text-2xl font-bold tracking-tight text-foreground">{p.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground max-w-lg">{p.desc}</p>
               </div>
-            </Link>
-          ))}
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  to="/pillar/$slug"
+                  params={{ slug: p.slug }}
+                  className="btn-primary py-2.5 px-6 text-sm"
+                >
+                  Learn more <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+                <Link to="/apply-now" className="btn-outline-light py-2.5 px-6 text-sm">
+                  Apply now
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
