@@ -2,6 +2,19 @@
 @source "../src";
 @import "tw-animate-css";
 
+/* Self-hosted fonts (latin) — replaces render-blocking Google Fonts link (CWV #12) */
+@import "@fontsource/playfair-display/latin-400.css";
+@import "@fontsource/playfair-display/latin-400-italic.css";
+@import "@fontsource/playfair-display/latin-500.css";
+@import "@fontsource/playfair-display/latin-600.css";
+@import "@fontsource/playfair-display/latin-600-italic.css";
+@import "@fontsource/playfair-display/latin-700.css";
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-500.css";
+@import "@fontsource/inter/latin-600.css";
+@import "@fontsource/inter/latin-700.css";
+@import "@fontsource/inter/latin-800.css";
+
 @custom-variant dark (&:is(.dark *));
 
 /*

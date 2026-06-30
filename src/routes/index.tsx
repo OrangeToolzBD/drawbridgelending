@@ -357,7 +357,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 bg-[color:var(--brand-charcoal)] text-white backdrop-blur-xl supports-[backdrop-filter]:bg-[color:var(--brand-charcoal)]/95">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <a href="/" className="flex items-center font-semibold">
-          <img src={siteLogoUrl} alt={SITE_CONFIG.name} className="h-10 w-auto" />
+          <img src={siteLogoUrl} width={956} height={231} alt={SITE_CONFIG.name} className="h-10 w-auto" />
           <span className="sr-only">{SITE_CONFIG.name}</span>
         </a>
 
@@ -524,7 +524,7 @@ export function Header() {
             <SheetContent side="right" className="w-[320px] overflow-y-auto p-0">
               <SheetHeader className="border-b border-border px-5 py-4">
                 <SheetTitle className="flex items-center gap-2 text-left">
-                  <img src={siteLogoUrl} alt={SITE_CONFIG.name} className="h-10 w-auto" />
+                  <img src={siteLogoUrl} width={956} height={231} alt={SITE_CONFIG.name} className="h-10 w-auto" />
                 </SheetTitle>
               </SheetHeader>
               <div className="px-4 py-4">
@@ -1617,7 +1617,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="flex items-center">
-              <img src={siteLogoUrl} alt={SITE_CONFIG.name} className="h-14 w-auto" />
+              <img src={siteLogoUrl} width={956} height={231} alt={SITE_CONFIG.name} className="h-14 w-auto" />
             </div>
             <address className="mt-6 not-italic space-y-2 text-sm text-white/55">
               <div className="font-semibold text-white">{SITE_CONFIG.name}</div>
