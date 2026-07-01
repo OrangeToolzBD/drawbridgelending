@@ -635,7 +635,7 @@ function Hero() {
     <section className="relative min-h-[90vh] overflow-hidden bg-[color:var(--brand-charcoal)] text-white flex items-center">
       {/* Riverside bridge at dusk — thematic fit for Drawbridge Lending */}
       <img
-        src="https://images.unsplash.com/photo-1569959220744-ff553533f492?w=1800&q=80&fit=crop&auto=format"
+        src="https://r2.connectsocial.app/387/ws-images/photo-1569959220744-ff553533f492-88d794.jpg"
         alt=""
         aria-hidden
         className="pointer-events-none absolute inset-0 h-full w-full object-cover object-bottom"
@@ -768,7 +768,7 @@ function CapitalDesk() {
       desc: "Revolving line secured by your open invoices without selling them. Advance up to 90% of eligible A/R.",
       category: "Working Capital",
       stat: "Up to 90% advance",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=600&fit=crop&q=80",
+      image: "https://r2.connectsocial.app/387/ws-images/photo-1554224155-6726b3ff858f-05309c.jpg",
     },
     {
       slug: "invoice-factoring",
@@ -777,7 +777,7 @@ function CapitalDesk() {
       desc: "Same-day cash on freight, staffing or oilfield invoices. Funded in as little as 24 hours.",
       category: "Cash Flow",
       stat: "Funded in 24 hrs",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=600&fit=crop&q=80",
+      image: "https://r2.connectsocial.app/387/ws-images/photo-1450101499163-c8848c66ca85-519530.jpg",
     },
     {
       slug: "revenue-based-financing",
@@ -786,7 +786,7 @@ function CapitalDesk() {
       desc: "Repay as a fixed percentage of monthly revenue. No equity, no fixed payment schedule.",
       category: "Growth Capital",
       stat: "No equity dilution",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&h=600&fit=crop&q=80",
+      image: "https://r2.connectsocial.app/387/ws-images/photo-1611974789855-9c2a0a7236a3-b3e2e1.jpg",
     },
     {
       slug: "small-business-loans",
@@ -795,7 +795,7 @@ function CapitalDesk() {
       desc: "One soft-pull application covers every major loan product. 75+ Louisiana-active lenders compared side by side.",
       category: "Business Loans",
       stat: "75+ lenders",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&h=600&fit=crop&q=80",
+      image: "https://r2.connectsocial.app/387/ws-images/photo-1507679799987-c73779587ccf-3cab23.jpg",
     },
     {
       slug: "sba-loans",
@@ -804,7 +804,7 @@ function CapitalDesk() {
       desc: "SBA 7(a), 504 and Express programs through Louisiana-active Preferred Lenders. Rates from 8.25% APR.",
       category: "Government-Backed",
       stat: "From 8.25% APR",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&h=600&fit=crop&q=80",
+      image: "https://r2.connectsocial.app/387/ws-images/photo-1486406146926-c627a92ad1ab-24b69b.jpg",
     },
     {
       slug: "equipment-financing",
@@ -813,7 +813,7 @@ function CapitalDesk() {
       desc: "Machinery, vehicles and tools financed with terms up to 7 years. Preserve cash flow on capital purchases.",
       category: "Asset Finance",
       stat: "Terms up to 7 yrs",
-      image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=900&h=600&fit=crop&q=80",
+      image: "https://r2.connectsocial.app/387/ws-images/photo-1565793298595-6a879b1d9492-2c27dd.jpg",
     },
   ];
 
@@ -1243,7 +1243,7 @@ function SuccessStories() {
       type: "Invoice Factoring",
       person: "Marco Delgado",
       role: "Owner & Operator",
-      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=face&q=80",
+      photo: "https://r2.connectsocial.app/387/ws-images/photo-1507003211169-0a1dd7228f2d-322253.jpg",
       featured: true,
     },
     {
@@ -1253,7 +1253,7 @@ function SuccessStories() {
       type: "AR Financing",
       person: "Renee Calderon",
       role: "CFO",
-      photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=96&h=96&fit=crop&crop=face&q=80",
+      photo: "https://r2.connectsocial.app/387/ws-images/photo-1573496359142-b8d87734a5a2-0eb7ba.jpg",
     },
     {
       name: "Uptown Dental Partners",
@@ -1262,7 +1262,7 @@ function SuccessStories() {
       type: "SBA 7(a) Loan",
       person: "Dr. Priya Anand",
       role: "Managing Partner",
-      photo: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=96&h=96&fit=crop&crop=face&q=80",
+      photo: "https://r2.connectsocial.app/387/ws-images/photo-1594824476967-48c8b964273f-edd0e1.jpg",
     },
     {
       name: "Garden District Kitchen Co.",
@@ -1271,7 +1271,7 @@ function SuccessStories() {
       type: "Working Capital",
       person: "Tomás Reyes",
       role: "Executive Chef & Co-Founder",
-      photo: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=96&h=96&fit=crop&crop=face&q=80",
+      photo: "https://r2.connectsocial.app/387/ws-images/photo-1531384441138-2736e62e0919-d5b3a2.jpg",
     },
     {
       name: "Metairie HVAC Services",
@@ -1280,7 +1280,7 @@ function SuccessStories() {
       type: "Equipment Financing",
       person: "Jordan Whitfield",
       role: "President",
-      photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=96&h=96&fit=crop&crop=face&q=80",
+      photo: "https://r2.connectsocial.app/387/ws-images/photo-1560250097-0b93528c311a-65da7e.jpg",
     },
     {
       name: "French Quarter Hospitality",
@@ -1289,7 +1289,7 @@ function SuccessStories() {
       type: "Business Term Loan",
       person: "Camila Vargas",
       role: "Founder",
-      photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=96&h=96&fit=crop&crop=face&q=80",
+      photo: "https://r2.connectsocial.app/387/ws-images/photo-1580489944761-15a19d654956-2fe459.jpg",
     },
   ];
 
